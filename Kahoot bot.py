@@ -40,12 +40,10 @@ def bot():
     global nameb, driver, tab
     if bot_num==1:
         print("No new window necessary")
-        continue
     elif bot_num >=2:
         print("Opening new window...")
         driver.execute_script("window.open('');")
         driver.switch_to.window(driver.window_handles[tab])
-        continue
     print("Navigating to Kahoot...")
     #Navigate to kahoot.com
     driver.get("https://kahoot.it/")
