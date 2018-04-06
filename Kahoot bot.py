@@ -1,5 +1,5 @@
 #A simple Kahoot bot that joins Kahoot game and sits idle
-#Version 1.4.3
+#Version 1.4.4
 #ENTech SS
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -9,13 +9,13 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 import random
 #Asking for info here:
-print("Kahoot spammer v 1.4.3")
+print("Kahoot spammer v 1.4.4")
 pin=input("Please enter a game pin:")
 name = input("Please enter a name:")
 join = input("Please enter a amount of bots to join(Default is 50):")
 tab = 0
 nameb = 'name'
-bot_num = 1
+bot_num = 0
 #Start chrome
 print("Starting chrome...")
 chrome_options = Options()
@@ -30,6 +30,7 @@ def namec():
     num=random.randint(1,999)*3
     if join=='1':
         nameb=name
+        bot_num = bot_num + 1
     if int(join)>=2:
         if bot_num==join:
             print("Name generation completed")
