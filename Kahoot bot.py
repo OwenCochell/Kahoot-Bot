@@ -40,7 +40,7 @@ def bot():
     if bot_num==1:
         print("No new window necessary")
         continue
-    elseif bot_num >=2:
+    elif bot_num >=2:
         print("Opening new window...")
         driver.execute_script("window.open('');")
         driver.switch_to.window(driver.window_handles[tab])
@@ -67,7 +67,7 @@ def bot():
     print("Checking if login was succesfull...")
     try:
        content = driver.find_element_by_class_name('ng-binding') 
-    exept:
+    except:
         print("Error checking page :("\n"Id could have changed, or connection could have dropped.")
         x=input("Press any key to exit...")
     print("Success!")
