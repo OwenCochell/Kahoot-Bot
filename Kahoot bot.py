@@ -36,7 +36,7 @@ def namec():
         nameb=(name + '.' + str(num))
         bot_num = bot_num + 1
 def bot():
-    global nameb, driver
+    global nameb, driver, tab
     if bot_num==1:
         print("No new window necessary")
         continue
@@ -68,10 +68,10 @@ def bot():
     try:
        content = driver.find_element_by_class_name('ng-binding') 
     except:
-        print("Error checking page :("\n"Id could have changed, or connection could have dropped.")
+        print("Error checking page:\nId could have changed, or connection could have dropped.")
         x=input("Press any key to exit...")
     print("Success!")
-    print("Bot [" + bot_num + "]is now in the game ;)")
+    print("Bot [" + bot_num + "] is now in the game ;)")
     tab = tab + 1
 #Code for running a set amoun of times
 for x in range(int(join)):
