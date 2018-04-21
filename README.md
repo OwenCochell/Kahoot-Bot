@@ -6,13 +6,16 @@ You must have python 3 installed. It should come pre-installed on linux. If not,
 >brew install python3
 Or:
 >apt install python3
+
 For windows users, you can download python [Here](https://www.python.org/downloads/)
 
 You must also have the selenium module installed.
 This can be installed with command:
 >pip install selenium
+
 If you don't have pip installed, try:
 >brew install pip
+
 Or:
 >apt install pip
 
