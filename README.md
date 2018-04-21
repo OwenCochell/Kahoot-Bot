@@ -4,6 +4,7 @@ A simple bot made in python that joins a specified Kahoot game and sits idle(Wil
 # Prerequisites
 You must have python 3 installed. It should come pre-installed on linux. If not, use:
 >brew install python3
+
 Or:
 >apt install python3
 
