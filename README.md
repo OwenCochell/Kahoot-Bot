@@ -2,11 +2,19 @@
 A simple bot made in python that joins a specified Kahoot game and sits idle(Will implement random question selection at a later date).
 
 # Prerequisites
-You must have python 3 installed. You can download python [Here](https://www.python.org/downloads/)
+You must have python 3 installed. It should come pre-installed on linux. If not, use:
+>brew install python3
+Or:
+>apt install python3
+For windows users, you can download python [Here](https://www.python.org/downloads/)
 
 You must also have the selenium module installed.
 This can be installed with command:
 >pip install selenium
+If you don't have pip installed, try:
+>brew install pip
+Or:
+>apt install pip
 
 More info about selenium and how to use it [Here](https://www.seleniumhq.org/)
 
