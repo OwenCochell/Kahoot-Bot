@@ -9,6 +9,7 @@ Or:
 >apt install python3
 
 For windows users, you can download python [Here](https://www.python.org/downloads/)
+(be sure to select "add python to system PATH during the instillation, or else you will have to add it to the PATH manualy, which is a HUGE pain)
 
 You must also have the selenium module installed.
 This can be installed with command:
@@ -22,7 +23,7 @@ Or:
 
 More info about selenium and how to use it [Here](https://www.seleniumhq.org/)
 
-This script uses chrome driver to produce a headless chrome environment. You must put the executable(chromedriver.exe) in you PATH for this script to work. You can download chromedriver.exe [Here](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+This script uses chrome driver to produce a headless chrome environment. You must put the executable(chromedriver.exe) in you PATH for this script to work. You can download chromedriver.exe [Here](https://sites.google.com/a/chromium.org/chromedriver/downloads). I recommend putting chromedriver.exe(or a copy of it) in the root directory of your python instillation, or if you're running Linux, put it in any bin directory of your distro. /bin should do nicley.)
 
 # Usage
 This script will ask you for a game pin upon startup. It will also ask you for a name and number of bots to join.
