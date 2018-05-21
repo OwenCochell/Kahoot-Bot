@@ -10,11 +10,11 @@ from selenium.webdriver.common.by import By
 import random
 #Asking for info here:
 print("Kahoot spammer v 1.4.4")
-pin=input("Please enter a game pin:")
+pin = input("Please enter a game pin:")
 name = input("Please enter a name:")
 join = input("Please enter a amount of bots to join(Default is 50):")
 tab = 0
-nameb = 'name'
+nameb = str(name)
 bot_num = 0
 #Start chrome
 print("Starting chrome...")
@@ -75,5 +75,3 @@ def bot():
 #Code for running a set amoun of times
 for x in range(int(join)):
     bot()
-
-
